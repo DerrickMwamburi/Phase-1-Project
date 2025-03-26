@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizen Connect – Bookings</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -19,11 +19,13 @@
     </header>
 
     <main>
-        <h2>MAKE A BOOKING NOW DONT BE SHY!</h2>
+        <h2>MAKE A BOOKING NOW – DON'T BE SHY!</h2>
+        
         <form id="booking-form">
             <input type="text" id="name" placeholder="Your Name" required>
             <select id="destination">
-                <!-- Destinations will be populated dynamically -->
+                <option value="" disabled selected>Choose a destination</option>
+                <!-- Destinations will be loaded here -->
             </select>
             <button type="submit">Book Now</button>
         </form>
@@ -35,3 +37,4 @@
     <script src="js/bookings.js"></script>
 </body>
 </html>
+
