@@ -1,0 +1,70 @@
+{
+    "destinations": [
+      {
+        "id": 1,
+        "name": "Maasai Mara",
+        "location": "Kenya",
+        "description": "A breathtaking wildlife reserve famous for the Great Migration.",
+        "image": "images/maasai-mara.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Serengeti National Park",
+        "location": "Tanzania",
+        "description": "Home to vast plains and diverse wildlife.",
+        "image": "images/serengeti.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Victoria Falls",
+        "location": "Zambia/Zimbabwe",
+        "description": "One of the largest and most stunning waterfalls in the world.",
+        "image": "images/victoria-falls.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Pyramids of Giza",
+        "location": "Egypt",
+        "description": "Ancient Egyptian pyramids, one of the Seven Wonders of the World.",
+        "image": "images/pyramids.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Table Mountain",
+        "location": "South Africa",
+        "description": "A flat-topped mountain with stunning views of Cape Town.",
+        "image": "images/table-mountain.jpg"
+      }
+    ],
+  
+    "bookings": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "destination": "Maasai Mara"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "destination": "Victoria Falls"
+      }
+    ],
+  
+    "agencies": [
+      {
+        "id": 1,
+        "name": "Safari Adventures",
+        "contact": "info@safariadventures.com",
+        "location": "Nairobi, Kenya"
+      },
+      {
+        "id": 2,
+        "name": "Wild Trek Tours",
+        "contact": "contact@wildtrektours.com",
+        "location": "Arusha, Tanzania"
+      }
+    ]
+  }
+  
