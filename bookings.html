@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Connect – Bookings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Next Adventure with KAIZEN CONNECT!!!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="agencies.html">Agencies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>MAKE A BOOKING NOW DONT BE SHY!</h2>
+        <form id="booking-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <select id="destination">
+                <!-- Destinations will be populated dynamically -->
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+
+        <h2>Your Bookings</h2>
+        <ul id="booking-list"></ul>
+    </main>
+
+    <script src="js/bookings.js"></script>
+</body>
+</html>
