@@ -2,15 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchDestinations(); // Load destinations when page loads
 });
 
-// 1️⃣ Event Listener: Fetch destinations from JSON Server
+// 1️⃣ Fetch and Display Destinations
 function fetchDestinations() {
     fetch("http://localhost:3000/destinations")
         .then(response => response.json())
-        .then(data => displayDestinations(data))
+        .then(data => {
+            displayDestinations(data);
+            addSearchFunctionality(data); // 🔥 Add search filter functionality
+        })
         .catch(error => console.error("Error fetching destinations:", error));
 }
 
-// 2️⃣ Event Listener: Dark mode toggle
+// 2️⃣ Event Listener: Dark Mode Toggle
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
@@ -25,6 +28,7 @@ if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
 }
 
+// 3️⃣ Display Destinations
 function displayDestinations(destinations) {
     const container = document.getElementById("destinations-container");
     container.innerHTML = ""; // Clear previous content
@@ -36,7 +40,7 @@ function displayDestinations(destinations) {
         card.innerHTML = `
             <img src="${destination.image}" alt="${destination.name}">
             <h3>${destination.name}</h3>
-            <p><strong>Location:</strong> ${destination.location}</p> <!-- FIXED: Added location -->
+            <p><strong>Location:</strong> ${destination.location}</p>
             <p>${destination.description}</p>
         `;
 
@@ -52,3 +56,17 @@ function displayDestinations(destinations) {
         container.appendChild(card);
     });
 }
+
+// 4️⃣ Event Listener: Search/Filter Destinations
+function addSearchFunctionality(destinations) {
+    const searchInput = document.getElementById("search");
+
+    searchInput.addEventListener("input", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredDestinations = destinations.filter(destination =>
+            destination.name.toLowerCase().includes(searchTerm)
+        );
+        displayDestinations(filteredDestinations);
+    });
+}
+
