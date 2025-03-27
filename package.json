@@ -20,6 +20,8 @@
   "homepage": "https://github.com/DerrickMwamburi/Phase-1-Project#readme",
   "devDependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }
-

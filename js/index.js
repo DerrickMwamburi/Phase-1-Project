@@ -70,3 +70,23 @@ function addSearchFunctionality(destinations) {
     });
 }
 
+const jsonServer = require('json-server');
+const cors = require('cors');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json'); // Your database file
+const middlewares = jsonServer.defaults();
+
+// Enable CORS for all domains
+server.use(cors());
+
+// Use default middlewares (logger, static, etc.)
+server.use(middlewares);
+
+// Use the router for API
+server.use(router);
+
+// Start the server on port 3000 (default for JSON server)
+server.listen(3000, () => {
+  console.log('JSON Server is running on http://localhost:3000');
+});
+
