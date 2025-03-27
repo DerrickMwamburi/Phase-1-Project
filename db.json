@@ -1,77 +1,146 @@
 {
-    "destinations": [
-      { 
-        "id": 1, 
-        "name": "Maasai Mara", 
-        "location": "Kenya", 
-        "image": "https://media.istockphoto.com/id/1416834065/photo/african-elephant-walking-with-tourist-car-stop-by-watching-during-sunset-at-masai-mara.jpg?s=612x612&w=0&k=20&c=OoRz5qTlXU4UTqhrXQ-c4bTO-avWBG-QE30iSOE_1Hg=", 
-        "description": "Experience the world-famous Maasai Mara, home to Africa’s Big Five and the breathtaking Great Migration. Witness millions of wildebeest and zebras crossing the Mara River in an unforgettable wildlife spectacle." 
-      },
-      { 
-        "id": 2, 
-        "name": "Victoria Falls", 
-        "location": "Zambia/Zimbabwe", 
-        "image": "https://t4.ftcdn.net/jpg/02/21/94/87/360_F_221948766_efKngyq424dEwe2N22QSsfPOgdyvZnq3.jpg", 
-        "description": "Known as 'The Smoke That Thunders,' Victoria Falls is one of the largest and most awe-inspiring waterfalls in the world. Feel the power of nature as millions of liters of water plunge into the Zambezi River." 
-      },
-      { 
-        "id": 3, 
-        "name": "Serengeti National Park", 
-        "location": "Tanzania", 
-        "image": "https://www.serengetiparktanzania.com/wp-content/uploads/2020/11/10-Facts-About-Serengeti-National-Park-750x450.jpg", 
-        "description": "Explore the vast plains of the Serengeti, where thousands of animals roam freely. Witness the stunning wildlife, including lions, elephants, cheetahs, and giraffes, in their natural habitat." 
-      },
-      { 
-        "id": 4, 
-        "name": "Table Mountain", 
-        "location": "South Africa", 
-        "image": "https://media.istockphoto.com/id/482989593/photo/table-mountain-cape-town-south-africa.jpg?s=612x612&w=0&k=20&c=090XpRVKromyj36DZlubvHzEH839BPGP08ipuQWyMDs=", 
-        "description": "A must-visit landmark in Cape Town, Table Mountain offers panoramic views of the city and ocean. Whether hiking to the top or taking the cableway, the experience is unforgettable." 
-      },
-      { 
-        "id": 5, 
-        "name": "Pyramids of Giza", 
-        "location": "Egypt", 
-        "image": "https://images.pexels.com/photos/71241/pexels-photo-71241.jpeg?cs=srgb&dl=pexels-davidmceachan-71241.jpg&fm=jpg", 
-        "description": "Step back in time and explore the legendary Pyramids of Giza. These ancient wonders of the world have stood for over 4,500 years, offering a glimpse into Egypt’s fascinating history and culture." 
-      },
-      {
-        "id": 6,
-        "name":"Bwindi Impenetrable Forest",
-        "location":"Uganda",
-        "image":"https://www.kahuzibieganationalparkcongo.org/wp-content/uploads/2021/03/Bwindi-Impenetrable-National-Park-750x450.jpg",
-        "description":"Home to the endangered mountain gorillas, Bwindi Impenetrable Forest is a haven for wildlife enthusiasts. Trek through the dense forest to encounter these majestic creatures in their natural habitat."
-      },
-      {"id": 7,
-      "name":"Kruger National Park",
-      "location":"South Africa",
-      "image":"https://i.ytimg.com/vi/EUQ3QhLzTyk/maxresdefault.jpg",
-      "description":"Embark on a safari adventure in Kruger National Park, one of Africa’s largest game reserves. Spot the Big Five and other wildlife species as you explore the diverse landscapes of this iconic park."
-      },
-      {"id": 8,
-      "name":"Okavango Delta",
-      "location":"Botswana",
-      "image":"https://cdn.pixabay.com/photo/2020/05/11/13/48/okavango-delta-5158380_1280.jpg",
-      "description":"Discover the unique ecosystem of the Okavango Delta, a UNESCO World Heritage Site. Experience mokoro rides, game drives, and walking safaris in this pristine wilderness teeming with wildlife."
-      }
-    ],
-    
-    "agencies": [
-      { "id": 1, "name": "Safari Experts", "location": "Nairobi, Kenya", "contact": "+254 700 123456", "email": "info@safariexperts.com" },
-      { "id": 2, "name": "African Treks", "location": "Cape Town, South Africa", "contact": "+27 82 123 4567", "email": "contact@africantreks.co.za" },
-      { "id": 3, "name": "Sahara Adventures", "location": "Cairo, Egypt", "contact": "+20 2 987654", "email": "tours@saharaadventures.com" },
-      { "id": 4, "name": "Wildlife Tours", "location": "Arusha, Tanzania", "contact": "+255 765 432 109", "email": "info@wildlifetours.com" },
-      { "id": 5, "name": "Zambezi Safaris", "location": "Livingstone, Zambia", "contact": "+260 96 321 0000", "email": "bookings@zambezisafaris.com" },
-      {"id": 6, "name":"Uganda Safaris","location":"Kampala, Uganda", "contact": "+256 781837213", "email": "utb@utb.go.ug " }
-      
-    ],
-  
-    "bookings": [
-      { "id": 1, "customer": "John Doe", "destination": 1, "agency": 1, "date": "2025-04-10", "status": "Confirmed" },
-      { "id": 2, "customer": "Jane Smith", "destination": 3, "agency": 4, "date": "2025-05-15", "status": "Pending" },
-      { "id": 3, "customer": "Michael Brown", "destination": 5, "agency": 3, "date": "2025-06-20", "status": "Cancelled" },
-      { "id": 4, "customer": "Emily Wilson", "destination": 2, "agency": 5, "date": "2025-07-12", "status": "Confirmed" },
-      { "id": 5, "customer": "David Kimani", "destination": 4, "agency": 2, "date": "2025-08-05", "status": "Confirmed" }
-    ]
-  }
-  
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Maasai Mara",
+      "location": "Kenya",
+      "image": "https://media.istockphoto.com/id/1416834065/photo/african-elephant-walking-with-tourist-car-stop-by-watching-during-sunset-at-masai-mara.jpg?s=612x612&w=0&k=20&c=OoRz5qTlXU4UTqhrXQ-c4bTO-avWBG-QE30iSOE_1Hg=",
+      "description": "Experience the world-famous Maasai Mara, home to Africa’s Big Five and the breathtaking Great Migration. Witness millions of wildebeest and zebras crossing the Mara River in an unforgettable wildlife spectacle."
+    },
+    {
+      "id": "2",
+      "name": "Victoria Falls",
+      "location": "Zambia/Zimbabwe",
+      "image": "https://t4.ftcdn.net/jpg/02/21/94/87/360_F_221948766_efKngyq424dEwe2N22QSsfPOgdyvZnq3.jpg",
+      "description": "Known as 'The Smoke That Thunders,' Victoria Falls is one of the largest and most awe-inspiring waterfalls in the world. Feel the power of nature as millions of liters of water plunge into the Zambezi River."
+    },
+    {
+      "id": "3",
+      "name": "Serengeti National Park",
+      "location": "Tanzania",
+      "image": "https://www.serengetiparktanzania.com/wp-content/uploads/2020/11/10-Facts-About-Serengeti-National-Park-750x450.jpg",
+      "description": "Explore the vast plains of the Serengeti, where thousands of animals roam freely. Witness the stunning wildlife, including lions, elephants, cheetahs, and giraffes, in their natural habitat."
+    },
+    {
+      "id": "4",
+      "name": "Table Mountain",
+      "location": "South Africa",
+      "image": "https://media.istockphoto.com/id/482989593/photo/table-mountain-cape-town-south-africa.jpg?s=612x612&w=0&k=20&c=090XpRVKromyj36DZlubvHzEH839BPGP08ipuQWyMDs=",
+      "description": "A must-visit landmark in Cape Town, Table Mountain offers panoramic views of the city and ocean. Whether hiking to the top or taking the cableway, the experience is unforgettable."
+    },
+    {
+      "id": "5",
+      "name": "Pyramids of Giza",
+      "location": "Egypt",
+      "image": "https://images.pexels.com/photos/71241/pexels-photo-71241.jpeg?cs=srgb&dl=pexels-davidmceachan-71241.jpg&fm=jpg",
+      "description": "Step back in time and explore the legendary Pyramids of Giza. These ancient wonders of the world have stood for over 4,500 years, offering a glimpse into Egypt’s fascinating history and culture."
+    },
+    {
+      "id": "6",
+      "name": "Bwindi Impenetrable Forest",
+      "location": "Uganda",
+      "image": "https://www.kahuzibieganationalparkcongo.org/wp-content/uploads/2021/03/Bwindi-Impenetrable-National-Park-750x450.jpg",
+      "description": "Home to the endangered mountain gorillas, Bwindi Impenetrable Forest is a haven for wildlife enthusiasts. Trek through the dense forest to encounter these majestic creatures in their natural habitat."
+    },
+    {
+      "id": "7",
+      "name": "Kruger National Park",
+      "location": "South Africa",
+      "image": "https://i.ytimg.com/vi/EUQ3QhLzTyk/maxresdefault.jpg",
+      "description": "Embark on a safari adventure in Kruger National Park, one of Africa’s largest game reserves. Spot the Big Five and other wildlife species as you explore the diverse landscapes of this iconic park."
+    },
+    {
+      "id": "8",
+      "name": "Okavango Delta",
+      "location": "Botswana",
+      "image": "https://cdn.pixabay.com/photo/2020/05/11/13/48/okavango-delta-5158380_1280.jpg",
+      "description": "Discover the unique ecosystem of the Okavango Delta, a UNESCO World Heritage Site. Experience mokoro rides, game drives, and walking safaris in this pristine wilderness teeming with wildlife."
+    }
+  ],
+  "agencies": [
+    {
+      "id": "1",
+      "name": "Safari Experts",
+      "location": "Nairobi, Kenya",
+      "contact": "+254 700 123456",
+      "email": "info@safariexperts.com"
+    },
+    {
+      "id": "2",
+      "name": "African Treks",
+      "location": "Cape Town, South Africa",
+      "contact": "+27 82 123 4567",
+      "email": "contact@africantreks.co.za"
+    },
+    {
+      "id": "3",
+      "name": "Sahara Adventures",
+      "location": "Cairo, Egypt",
+      "contact": "+20 2 987654",
+      "email": "tours@saharaadventures.com"
+    },
+    {
+      "id": "4",
+      "name": "Wildlife Tours",
+      "location": "Arusha, Tanzania",
+      "contact": "+255 765 432 109",
+      "email": "info@wildlifetours.com"
+    },
+    {
+      "id": "5",
+      "name": "Zambezi Safaris",
+      "location": "Livingstone, Zambia",
+      "contact": "+260 96 321 0000",
+      "email": "bookings@zambezisafaris.com"
+    },
+    {
+      "id": "6",
+      "name": "Uganda Safaris",
+      "location": "Kampala, Uganda",
+      "contact": "+256 781837213",
+      "email": "utb@utb.go.ug "
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "customer": "John Doe",
+      "destination": 1,
+      "agency": 1,
+      "date": "2025-04-10",
+      "status": "Cancelled"
+    },
+    {
+      "id": "2",
+      "customer": "Jane Smith",
+      "destination": 3,
+      "agency": 4,
+      "date": "2025-05-15",
+      "status": "Cancelled"
+    },
+    {
+      "id": "3",
+      "customer": "Michael Brown",
+      "destination": 5,
+      "agency": 3,
+      "date": "2025-06-20",
+      "status": "Confirmed"
+    },
+    {
+      "id": "4",
+      "customer": "Emily Wilson",
+      "destination": 2,
+      "agency": 5,
+      "date": "2025-07-12",
+      "status": "Confirmed"
+    },
+    {
+      "id": "5",
+      "customer": "David Kimani",
+      "destination": 4,
+      "agency": 2,
+      "date": "2025-08-05",
+      "status": "Confirmed"
+    }
+  ]
+}

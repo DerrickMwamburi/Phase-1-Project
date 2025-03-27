@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>KAIZEN CONNECT – SMART TOURISM</h1>
+        <h1>Kaizen Connect – Smart Tourism</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="bookings.html" class="active">Bookings</a>
-            <a href="agencies.html">Agencies</a>
+            <ul>
+                <li><a href="index.html" id="home-link">Destinations</a></li>
+                <li><a href="bookings.html" id="bookings-link" class="active">Bookings</a></li>
+                <li><a href="agencies.html" id="agencies-link">Agencies</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -30,15 +32,13 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Bookings will be inserted here -->
+                <!-- Data from JSON will be inserted here -->
             </tbody>
         </table>
     </main>
 
-    <footer>
-        <p>© 2025 Kaizen Connect. All Rights Reserved.</p>
-    </footer>
-
     <script src="js/bookings.js"></script>
 </body>
 </html>
+
+
