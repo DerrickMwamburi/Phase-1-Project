@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const agencySelect = document.getElementById("agency");
 
     // Fetch Destinations and Populate Dropdown
-    fetch("http://localhost:3000/destinations")
+    fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
         .then(response => response.json())
         .then(destinations => {
             destinations.forEach(destination => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     // Fetch Agencies and Populate Dropdown
-    fetch("http://localhost:3000/agencies")
+    fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
         .then(response => response.json())
         .then(agencies => {
             agencies.forEach(agency => {
@@ -30,34 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fetch and Display Existing Bookings
     function loadBookings() {
-        fetch("http://localhost:3000/bookings")
-            .then(response => response.json())
-            .then(bookings => {
-                bookingsTableBody.innerHTML = ""; // Clear table before reloading
-                bookings.forEach(booking => displayBooking(booking));
+        fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
+        .then(res => res.json())
+        .then(bookings => {
+            bookings.forEach(booking => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${booking.customer}</td>
+                    <td>${booking.destination}</td>
+                    <td>${booking.agency}</td>
+                    <td>${booking.date}</td>
+                    <td>${booking.status}</td>
+                    <td>
+                        <button class="confirm-btn" data-id="${booking.id}">Confirm</button>
+                        <button class="remove-btn" data-id="${booking.id}">Remove</button>
+                    </td>
+                `;
+                bookingsTableBody.appendChild(row);
+
+                // Add Event Listener to Delete Button
+                row.querySelector(".remove-btn").addEventListener("click", () => {
+                    deleteBooking(booking.id);
+                });
             });
-    }
-
-    loadBookings(); // Initial load
-
-    // Function to Display Booking in Table
-    function displayBooking(booking) {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${booking.customer}</td>
-            <td>${booking.destinationName}</td>
-            <td>${booking.agencyName}</td>
-            <td>${booking.date}</td>
-            <td>${booking.status}</td>
-            <td>
-                <button class="delete-btn" data-id="${booking.id}">❌ Remove</button>
-            </td>
-        `;
-        bookingsTableBody.appendChild(row);
-
-        // Add Event Listener to Delete Button
-        row.querySelector(".delete-btn").addEventListener("click", () => {
-            deleteBooking(booking.id);
         });
     }
 
@@ -87,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         // Send POST Request to JSON Server
-        fetch("http://localhost:3000/bookings", {
+        fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newBooking)
@@ -101,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to Delete a Booking
     function deleteBooking(id) {
-        fetch(`http://localhost:3000/bookings/${id}`, {
+        fetch(`https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings/${id}`, {
             method: "DELETE"
         })
         .then(() => loadBookings()); // Refresh bookings

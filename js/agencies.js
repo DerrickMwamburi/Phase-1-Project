@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const agencyList = document.getElementById("agency-list");
 
-    fetch("http://localhost:3000/agencies")
+    fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/agencies")
         .then((response) => response.json())
         .then((agencies) => {
             agencies.forEach((agency) => {

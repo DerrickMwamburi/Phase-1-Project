@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchDestinations(); // Load destinations when page loads
 });
 
-// 1️⃣ Fetch and Display Destinations
-function fetchDestinations() {
-    fetch("http://localhost:3000/destinations")
-        .then(response => response.json())
-        .then(data => {
-            displayDestinations(data);
-            addSearchFunctionality(data); // 🔥 Add search filter functionality
-        })
-        .catch(error => console.error("Error fetching destinations:", error));
-}
+fetch("https://your-vercel-project.vercel.app/api/destinations")
+    .then(res => res.json())
+    .then(destinations => {
+        destinations.forEach(destination => {
+            const option = document.createElement("option");
+            option.value = destination.id;
+            option.textContent = destination.name;
+            destinationSelect.appendChild(option);
+        });
+    });
 
 // 2️⃣ Event Listener: Dark Mode Toggle
 const darkModeToggle = document.getElementById("dark-mode-toggle");
