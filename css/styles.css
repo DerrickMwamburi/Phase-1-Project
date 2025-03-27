@@ -1,0 +1,169 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F4E1C1; /* Soft African Brown */
+    color: #3E2723; /* Dark Brown */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #8B5A2B; /* Rich African Brown */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, #dark-mode-toggle {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #6D4C41; /* Darker Brown */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul li a:hover, #dark-mode-toggle:hover {
+    background-color: #4E342E; /* Darker Shade */
+}
+
+/* Destinations Section */
+#destinations {
+    padding: 40px;
+    text-align: center;
+}
+
+#destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Destination Cards */
+.destination-card {
+    background-color: #FFF3E0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.destination-card p {
+    font-size: 1rem;
+    padding: 10px;
+    color: #5D4037;
+}
+
+/* Contact Section */
+footer {
+    background-color: #6D4C41;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer input, footer textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer button {
+    background-color: #4E342E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #3E2723;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #3E2723;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #5D4037;
+}
+
+.dark-mode .destination-card {
+    background-color: #6D4C41;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #4E342E;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

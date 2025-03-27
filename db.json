@@ -34,6 +34,25 @@
         "location": "Egypt", 
         "image": "https://images.pexels.com/photos/71241/pexels-photo-71241.jpeg?cs=srgb&dl=pexels-davidmceachan-71241.jpg&fm=jpg", 
         "description": "Step back in time and explore the legendary Pyramids of Giza. These ancient wonders of the world have stood for over 4,500 years, offering a glimpse into Egypt’s fascinating history and culture." 
+      },
+      {
+        "id": 6,
+        "name":"Bwindi Impenetrable Forest",
+        "location":"Uganda",
+        "image":"https://www.kahuzibieganationalparkcongo.org/wp-content/uploads/2021/03/Bwindi-Impenetrable-National-Park-750x450.jpg",
+        "description":"Home to the endangered mountain gorillas, Bwindi Impenetrable Forest is a haven for wildlife enthusiasts. Trek through the dense forest to encounter these majestic creatures in their natural habitat."
+      },
+      {"id": 7,
+      "name":"Kruger National Park",
+      "location":"South Africa",
+      "image":"https://i.ytimg.com/vi/EUQ3QhLzTyk/maxresdefault.jpg",
+      "description":"Embark on a safari adventure in Kruger National Park, one of Africa’s largest game reserves. Spot the Big Five and other wildlife species as you explore the diverse landscapes of this iconic park."
+      },
+      {"id": 8,
+      "name":"Okavango Delta",
+      "location":"Botswana",
+      "image":"https://cdn.pixabay.com/photo/2020/05/11/13/48/okavango-delta-5158380_1280.jpg",
+      "description":"Discover the unique ecosystem of the Okavango Delta, a UNESCO World Heritage Site. Experience mokoro rides, game drives, and walking safaris in this pristine wilderness teeming with wildlife."
       }
     ],
     
@@ -42,7 +61,9 @@
       { "id": 2, "name": "African Treks", "location": "Cape Town, South Africa", "contact": "+27 82 123 4567", "email": "contact@africantreks.co.za" },
       { "id": 3, "name": "Sahara Adventures", "location": "Cairo, Egypt", "contact": "+20 2 987654", "email": "tours@saharaadventures.com" },
       { "id": 4, "name": "Wildlife Tours", "location": "Arusha, Tanzania", "contact": "+255 765 432 109", "email": "info@wildlifetours.com" },
-      { "id": 5, "name": "Zambezi Safaris", "location": "Livingstone, Zambia", "contact": "+260 96 321 0000", "email": "bookings@zambezisafaris.com" }
+      { "id": 5, "name": "Zambezi Safaris", "location": "Livingstone, Zambia", "contact": "+260 96 321 0000", "email": "bookings@zambezisafaris.com" },
+      {"id": 6, "name":"Uganda Safaris","location":"Kampala, Uganda", "contact": "+256 781837213", "email": "utb@utb.go.ug " }
+      
     ],
   
     "bookings": [
