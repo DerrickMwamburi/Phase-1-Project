@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const agencySelect = document.getElementById("agency");
 
     // Fetch Destinations and Populate Dropdown
-    fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
+    fetch("https://phase-1-project-one-beige.vercel.app/api/destinations")
         .then(response => response.json())
         .then(destinations => {
             destinations.forEach(destination => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     // Fetch Agencies and Populate Dropdown
-    fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
+    fetch("https://phase-1-project-one-beige.vercel.app/api/destinations")
         .then(response => response.json())
         .then(agencies => {
             agencies.forEach(agency => {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fetch and Display Existing Bookings
     function loadBookings() {
-        fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings")
+        fetch("https://phase-1-project-one-beige.vercel.app/api/destinations")
         .then(res => res.json())
         .then(bookings => {
             bookings.forEach(booking => {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         // Send POST Request to JSON Server
-        fetch("https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings", {
+        fetch("https://phase-1-project-one-beige.vercel.app/api/destinations", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newBooking)
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to Delete a Booking
     function deleteBooking(id) {
-        fetch(`https://phase-1-project-5ymgooc3x-derrickmwamburis-projects.vercel.app/api/bookings/${id}`, {
+        fetch(`https://phase-1-project-one-beige.vercel.app/api/bookings/${id}`, {
             method: "DELETE"
         })
         .then(() => loadBookings()); // Refresh bookings
