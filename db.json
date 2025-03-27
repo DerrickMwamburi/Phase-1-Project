@@ -1,0 +1,56 @@
+{
+    "destinations": [
+      { 
+        "id": 1, 
+        "name": "Maasai Mara", 
+        "location": "Kenya", 
+        "image": "https://example.com/maasai-mara.jpg", 
+        "description": "Experience the world-famous Maasai Mara, home to Africa’s Big Five and the breathtaking Great Migration. Witness millions of wildebeest and zebras crossing the Mara River in an unforgettable wildlife spectacle." 
+      },
+      { 
+        "id": 2, 
+        "name": "Victoria Falls", 
+        "location": "Zambia/Zimbabwe", 
+        "image": "https://example.com/victoria-falls.jpg", 
+        "description": "Known as 'The Smoke That Thunders,' Victoria Falls is one of the largest and most awe-inspiring waterfalls in the world. Feel the power of nature as millions of liters of water plunge into the Zambezi River." 
+      },
+      { 
+        "id": 3, 
+        "name": "Serengeti National Park", 
+        "location": "Tanzania", 
+        "image": "https://example.com/serengeti.jpg", 
+        "description": "Explore the vast plains of the Serengeti, where thousands of animals roam freely. Witness the stunning wildlife, including lions, elephants, cheetahs, and giraffes, in their natural habitat." 
+      },
+      { 
+        "id": 4, 
+        "name": "Table Mountain", 
+        "location": "South Africa", 
+        "image": "https://example.com/table-mountain.jpg", 
+        "description": "A must-visit landmark in Cape Town, Table Mountain offers panoramic views of the city and ocean. Whether hiking to the top or taking the cableway, the experience is unforgettable." 
+      },
+      { 
+        "id": 5, 
+        "name": "Pyramids of Giza", 
+        "location": "Egypt", 
+        "image": "https://example.com/pyramids.jpg", 
+        "description": "Step back in time and explore the legendary Pyramids of Giza. These ancient wonders of the world have stood for over 4,500 years, offering a glimpse into Egypt’s fascinating history and culture." 
+      }
+    ],
+    
+    "agencies": [
+      { "id": 1, "name": "Safari Experts", "location": "Nairobi, Kenya", "contact": "+254 700 123456", "email": "info@safariexperts.com" },
+      { "id": 2, "name": "African Treks", "location": "Cape Town, South Africa", "contact": "+27 82 123 4567", "email": "contact@africantreks.co.za" },
+      { "id": 3, "name": "Sahara Adventures", "location": "Cairo, Egypt", "contact": "+20 2 987654", "email": "tours@saharaadventures.com" },
+      { "id": 4, "name": "Wildlife Tours", "location": "Arusha, Tanzania", "contact": "+255 765 432 109", "email": "info@wildlifetours.com" },
+      { "id": 5, "name": "Zambezi Safaris", "location": "Livingstone, Zambia", "contact": "+260 96 321 0000", "email": "bookings@zambezisafaris.com" }
+    ],
+  
+    "bookings": [
+      { "id": 1, "customer": "John Doe", "destination": 1, "agency": 1, "date": "2025-04-10", "status": "Confirmed" },
+      { "id": 2, "customer": "Jane Smith", "destination": 3, "agency": 4, "date": "2025-05-15", "status": "Pending" },
+      { "id": 3, "customer": "Michael Brown", "destination": 5, "agency": 3, "date": "2025-06-20", "status": "Cancelled" },
+      { "id": 4, "customer": "Emily Wilson", "destination": 2, "agency": 5, "date": "2025-07-12", "status": "Confirmed" },
+      { "id": 5, "customer": "David Kimani", "destination": 4, "agency": 2, "date": "2025-08-05", "status": "Confirmed" }
+    ]
+  }
+  

@@ -1,0 +1,25 @@
+{
+  "name": "phase-1-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerrickMwamburi/Phase-1-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerrickMwamburi/Phase-1-Project/issues"
+  },
+  "homepage": "https://github.com/DerrickMwamburi/Phase-1-Project#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
+
