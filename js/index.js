@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function fetchDestinations() {
-    fetch("http://localhost:3000/destinations")
+    fetch("https://phase-1-project-fygn.onrender.com/destinations")
         .then(response => response.json())
         .then(data => {
             const destinationsWithFullImagePaths = data.map(destination => {
@@ -24,7 +24,7 @@ function getFullImagePath(imagePath) {
     if (imagePath.startsWith('http')) {
         return imagePath;
     }
-    return `http://localhost:3000/images/${imagePath}`;
+    return `https://phase-1-project-fygn.onrender.com/images/${imagePath}`;
 }
 
 
@@ -71,8 +71,6 @@ function displayDestinations(destinations) {
         container.appendChild(card);
     });
 }
-
-
 function addSearchFunctionality(destinations) {
     const searchInput = document.getElementById("search");
     searchInput.addEventListener("input", () => {
