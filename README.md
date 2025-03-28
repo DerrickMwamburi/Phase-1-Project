@@ -1,6 +1,7 @@
 Kaizen Connect – Smart Tourism Management System
 🚀 A modern web-based tourism management system that connects travelers with destinations and travel agencies seamlessly.
 
+
 📌 Project Overview
 Kaizen Connect is designed to simplify tourism management in Africa. It allows users to:
 ✅ Browse tourist destinations with images and details.
@@ -10,6 +11,8 @@ Kaizen Connect is designed to simplify tourism management in Africa. It allows u
 ✅ Switch between dark mode and light mode for better user experience.
 ✅ Search for destinations and agencies in real time.
 ✅ Contact support via Contact Us Form.
+
+
 
 📂 Project Structure
 graphql
@@ -30,6 +33,10 @@ Edit
  ┣ 📜 bookings.html   # (Bookings page)
  ┣ 📜 agencies.html   # (Travel agencies page)
  ┗ 📜 README.md       # (This file)
+
+
+
+
 📊 MVPs (Minimum Viable Product) Achieved
 ✅ JSON Server Backend: Serves tourism data via a local API.
 ✅ Asynchronous Fetching: Uses fetch() to load destinations, agencies, and bookings.
@@ -39,13 +46,12 @@ Edit
 ✅ Dark Mode & Light Mode Toggle: Improves UI accessibility.
 ✅ Live Search Functionality: Searches destinations and agencies without reloading.
 
+
+
 💡 Key Features & Code Highlights
 1️⃣ Fetching Data from JSON Server
 This function loads and displays destinations dynamically:
-
 js
-Copy
-Edit
 fetch("http://localhost:3000/destinations")
   .then(res => res.json())
   .then(destinations => {
@@ -58,6 +64,9 @@ fetch("http://localhost:3000/destinations")
         </div>`;
     });
   });
+
+
+
 2️⃣ Handling Bookings with Event Listeners
 js
 Copy
@@ -82,17 +91,21 @@ document.querySelector("#booking-form").addEventListener("submit", (e) => {
     location.reload();
   });
 });
+
+
+
+
 3️⃣ Implementing Dark Mode
 js
-Copy
-Edit
 document.querySelector("#dark-mode-toggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+
+
+
 4️⃣ Search Feature
 js
-Copy
-Edit
 document.querySelector("#search").addEventListener("input", (e) => {
   let searchTerm = e.target.value.toLowerCase();
   let filteredDestinations = destinations.filter(dest => dest.name.toLowerCase().includes(searchTerm));
