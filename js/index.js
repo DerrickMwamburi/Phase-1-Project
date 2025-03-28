@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetchDestinations(); // Load destinations when page loads
+    fetchDestinations(); 
 });
 
-// 1️⃣ Fetch and Display Destinations
+
 function fetchDestinations() {
     fetch("http://localhost:3000/destinations")
         .then(response => response.json())
         .then(data => {
-            // Process image URLs before displaying
             const destinationsWithFullImagePaths = data.map(destination => {
                 return {
                     ...destination,
-                    // Ensure image path is complete
                     image: getFullImagePath(destination.image)
                 };
             });
@@ -21,19 +19,15 @@ function fetchDestinations() {
         .catch(error => console.error("Error fetching destinations:", error));
 }
 
-// Helper function to construct proper image paths
+
 function getFullImagePath(imagePath) {
-    // If it's already a full URL, return as-is
     if (imagePath.startsWith('http')) {
         return imagePath;
     }
-    
-    // If using local images with JSON server
-    // Assuming your images are in a 'public/images' folder
     return `http://localhost:3000/images/${imagePath}`;
 }
 
-// 2️⃣ Event Listener: Dark Mode Toggle
+
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
@@ -41,21 +35,21 @@ darkModeToggle.addEventListener("click", () => {
     localStorage.setItem("darkMode", isDarkMode);
 });
 
-// Apply dark mode preference on page load
+
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
 }
 
-// 3️⃣ Display Destinations
+
 function displayDestinations(destinations) {
     const container = document.getElementById("destinations-container");
-    container.innerHTML = ""; // Clear previous content
+    container.innerHTML = ""; 
 
     destinations.forEach(destination => {
         const card = document.createElement("div");
         card.className = "destination-card";
 
-        // Add fallback image if needed
+        
         const imageUrl = destination.image || 'default-placeholder.jpg';
         
         card.innerHTML = `
@@ -66,7 +60,7 @@ function displayDestinations(destinations) {
             <p>${destination.description}</p>
         `;
 
-        // Mouseover effects
+        
         card.addEventListener("mouseover", () => {
             card.style.border = "3px solid gold";
         });
@@ -78,7 +72,7 @@ function displayDestinations(destinations) {
     });
 }
 
-// 4️⃣ Search/Filter Functionality
+
 function addSearchFunctionality(destinations) {
     const searchInput = document.getElementById("search");
     searchInput.addEventListener("input", () => {
