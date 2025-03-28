@@ -297,5 +297,16 @@
       "email": "support@congowildtours.com"
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "customer": "derrick",
+      "destination": "1",
+      "destinationName": "Maasai Mara",
+      "agency": "1",
+      "agencyName": "Safari Experts,Kenya",
+      "date": "2025-04-11",
+      "status": "Pending",
+      "id": 1
+    }
+  ]
 }
