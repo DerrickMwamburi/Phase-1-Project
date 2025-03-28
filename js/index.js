@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchDestinations(); // Load destinations when page loads
 });
 
-fetch("https://your-vercel-project.vercel.app/api/destinations")
+fetch("http://localhost:3000/destinations")
     .then(res => res.json())
     .then(destinations => {
         destinations.forEach(destination => {
