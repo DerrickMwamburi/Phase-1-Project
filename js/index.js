@@ -90,14 +90,17 @@ function addSearchFunctionality(destinations) {
     });
 }
 
-// server.js or app.js
-
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-// Use the environment variable for port, defaulting to 3000 if not specified
-const PORT = process.env.PORT || 3000;
+// Use CORS middleware
+app.use(cors());
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+// Set the port to either the environment variable or a fallback port
+const PORT = process.env.PORT || 3000; // You can set this to any available port like 3000 or 8080
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+
+
