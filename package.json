@@ -4,7 +4,7 @@
   "description": "A project to demonstrate the Kaizen Connect Smart Tourism Management System",
   "main": "index.js",
   "scripts": {
-    "server":"json-server --watch db.json --host 0.0.0.0 --port 3000",
+    "server":"json-server --watch db.json --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

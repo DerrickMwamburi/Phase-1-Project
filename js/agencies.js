@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const agencyList = document.getElementById("agency-list");
 
-    fetch("https://phase-1-project-kaizen.onrender.com/agencies")
+    fetch("http://localhost:3000/agencies")
         .then((response) => response.json())
         .then((agencies) => {
             agencies.forEach((agency) => {

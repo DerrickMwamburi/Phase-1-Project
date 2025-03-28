@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 1️⃣ Fetch and Display Destinations
 function fetchDestinations() {
-    fetch("https://phase-1-project-kaizen.onrender.com/destinations")
+    fetch("http://localhost:3000/destinations")
         .then(response => response.json())
         .then(data => {
             // Process image URLs before displaying
@@ -30,7 +30,7 @@ function getFullImagePath(imagePath) {
     
     // If using local images with JSON server
     // Assuming your images are in a 'public/images' folder
-    return `https://phase-1-project-kaizen.onrender.com/images/${imagePath}`;
+    return `http://localhost:3000/images/${imagePath}`;
 }
 
 // 2️⃣ Event Listener: Dark Mode Toggle
